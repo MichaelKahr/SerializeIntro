@@ -25,6 +25,11 @@ public class Schueler {
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
+
+    @Override
+    public String toString() {
+        return String.format(this.name+" "+this.getBirthday().toString());
+    }
     
     
 }
