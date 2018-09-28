@@ -37,6 +37,7 @@ public class SchuelerBL extends AbstractListModel{
             bw.write(s.getName());
             bw.write(";");
             bw.write(s.getBirthday().toString());
+            bw.newLine();
         }
         bw.flush();
         bw.close();
